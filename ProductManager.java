@@ -1,3 +1,20 @@
+/*
+ * MySQL setup (run this first):
+ *
+ * CREATE DATABASE IF NOT EXISTS tutorial9;
+ * USE tutorial9;
+ *
+ * CREATE TABLE Product (
+ *     ProductID INT PRIMARY KEY,
+ *     ProductName VARCHAR(100) NOT NULL,
+ *     Price DECIMAL(10,2) NOT NULL,
+ *     Quantity INT NOT NULL
+ * );
+ *
+ * Update USER and PASS below, and add the MySQL Connector/J jar to the classpath:
+ *   javac ProductManager.java
+ *   java -cp .:mysql-connector-j-8.x.jar ProductManager     (Windows: use ; instead of :)
+ */
 import java.sql.*;
 import java.util.Scanner;
 

@@ -1,3 +1,26 @@
+/*
+ * MySQL setup (run this first):
+ *
+ * CREATE DATABASE IF NOT EXISTS tutorial9;
+ * USE tutorial9;
+ *
+ * CREATE TABLE CourseRegistration (
+ *     StudentID INT,
+ *     StudentName VARCHAR(100),
+ *     CourseCode VARCHAR(10),
+ *     CourseName VARCHAR(100),
+ *     Semester INT
+ * );
+ *
+ * INSERT INTO CourseRegistration VALUES
+ *  (1,'Arun','CS101','Java Programming',3),
+ *  (2,'Divya','CS101','Java Programming',3),
+ *  (3,'Kiran','CS102','Database Systems',3);
+ *
+ * Update USER and PASS below, and add the MySQL Connector/J jar to the classpath:
+ *   javac CourseSearch.java
+ *   java -cp .:mysql-connector-j-8.x.jar CourseSearch     (Windows: use ; instead of :)
+ */
 import java.sql.*;
 import java.util.Scanner;
 

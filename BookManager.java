@@ -1,3 +1,21 @@
+/*
+ * MySQL setup (run this first):
+ *
+ * CREATE DATABASE IF NOT EXISTS tutorial9;
+ * USE tutorial9;
+ *
+ * CREATE TABLE Book (
+ *     BookID INT PRIMARY KEY,
+ *     Title VARCHAR(100) NOT NULL,
+ *     Author VARCHAR(100) NOT NULL,
+ *     Price DECIMAL(8,2) NOT NULL,
+ *     Availability VARCHAR(3) NOT NULL DEFAULT 'Yes'   -- 'Yes' / 'No'
+ * );
+ *
+ * Update USER and PASS below, and add the MySQL Connector/J jar to the classpath:
+ *   javac BookManager.java
+ *   java -cp .:mysql-connector-j-8.x.jar BookManager     (Windows: use ; instead of :)
+ */
 import java.sql.*;
 import java.util.Scanner;
 
