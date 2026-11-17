@@ -14,4 +14,4 @@ eligible_for_promotion(Name) :-
 
 % Query in SWI-Prolog:
 % ?- eligible_for_promotion(Employee).
-% Expected answer: Employee = meena ; Employee = ravi.
+% Expected answers: Employee = ravi ; Employee = meena.
